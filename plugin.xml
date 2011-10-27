@@ -12,7 +12,7 @@
         <version>0.5</version>
         <settings></settings>
         <requires>
-                <livestreet>0.5.1</livestreet>
+                <livestreet>0.4.2</livestreet>
                 <plugins>
 
                 </plugins>

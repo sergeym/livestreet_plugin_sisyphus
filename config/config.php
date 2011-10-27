@@ -16,31 +16,18 @@
  * http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
  *
  */
-if (!class_exists('Plugin')) {
-    die('Hacking attemp!');
-}
-class PluginSisyphus extends Plugin {
-    /**
-     * Активация плагина
-     * @return boolean
-     */
-	public function Activate() {
-        return true;
-	}
 
-    /**
-     * Инициализация плагина
-     * @return void
-     */
-	public function Init() {
+$config = array();
 
-	}
+/**
+ * Массив пар экшен - эвент, к формам которых будет подключен Sisyphus
+ */
+$config['actions'] = array(
+    'topic' => 'add',
+    'question' => 'add',
+    'link' => 'add',
+    'photoset' => 'add',
+    'blog' => 'add',
+);
 
-    /**
-     * Деактивация плагина
-     * @return boolean
-     */
-	public function Deactivate() {
-        return true;
-	}
-}
+return $config;
