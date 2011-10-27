@@ -1,7 +1,7 @@
 Плагин Sisyphus
 
 Sisyphus.js - это плагин для jQuery, который позволяет сохранять данные HTML форм в локальном хранилище (Local Storage) браузера на случай сбоев, случайного закрытия закладок и прочих неприятностей.
-Плагин Sisyphus для LiveStreet подключает Sisyphus.js для форм создания/редактирования различных типов топиков.
+Плагин Sisyphus для LiveStreet подключает Sisyphus.js для форм создания различных типов топиков.
 
 Автор Sisyphus.js - Alexander Kaupanin kaupanin@gmail.com
 
