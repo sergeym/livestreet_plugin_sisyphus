@@ -50,15 +50,17 @@ function PluginSisyphus_jquery_load_callback() {
         script.type = "text/javascript";
         script.async = true;
         script.src = DIR_WEB_ROOT + '/plugins/sisyphus/templates/skin/default/js/jquery/jquery-1.6.4.min.js';
-        script.onload = function() { PluginSisyphus_jquery_load_callback() };
+        script.onload = function() { jQuery.noConflict(); PluginSisyphus_jquery_load_callback() };
         script.onreadystatechange = function() {
             if (script.readyState == 'complete'){
+                jQuery.noConflict();
                 PluginSisyphus_jquery_load_callback();
                 // clean up for IE and Opera
                 script.onload = null;
                 script.onreadystatechange = null;
             }else if(script.readyState == 'loaded'){
                 eval(script);
+                jQuery.noConflict();
                 PluginSisyphus_jquery_load_callback();
                 // clean up for IE and Opera
                 script.onload = null;
