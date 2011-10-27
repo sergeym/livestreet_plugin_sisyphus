@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin>
+        <name>
+                <lang name="default">Sisyphus: HTML form content protection</lang>
+                <lang name="russian">Sisyphus: защита данных в HTML формах</lang>
+        </name>
+        <author>
+                <lang name="default">Sergey Marin</lang>
+                <lang name="russian">Сергей Марин</lang>
+        </author>
+        <homepage>http://sergeymarin.com/</homepage>
+        <version>0.5</version>
+        <settings></settings>
+        <requires>
+                <livestreet>0.5.1</livestreet>
+                <plugins>
+
+                </plugins>
+        </requires>
+        <description>
+                <lang name="default">Sisyphus plugin for LiveStreet saves html forms data to LocalStorage to restore them after browser crashes, tabs closings and other disasters.</lang>
+                <lang name="russian">Плагин Sisyphus для LiveStreet сохраняет данные HTML-форм в LocalStorage, что бы восстановить их после сбоя браузера, закрытия закладки и других неприятностей.</lang>
+        </description>
+        <delegate>
+                <module></module>
+                <action></action>
+                <template></template>
+                <entity></entity>
+        </delegate>
+</plugin>
